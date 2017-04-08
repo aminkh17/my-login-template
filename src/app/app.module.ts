@@ -13,7 +13,11 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ContentComponent } from './shared/content/content.component';
 import { LoginComponent } from './login/login.component';
+
 import { FlexDirective } from './shared/directives/flex.directive';
+
+import { AuthGuard } from "./shared/services/auth-guard.service";
+import { AuthService } from "./shared/services/auth-service.service";
 
 @NgModule({
   declarations: [
@@ -34,11 +38,16 @@ import { FlexDirective } from './shared/directives/flex.directive';
     RouterModule.forRoot([
       {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'login',
+        component: LoginComponent
       }
     ])
   ],
-  providers: [],
+  providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
