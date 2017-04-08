@@ -2,14 +2,13 @@
 <div class="login-card">
     <h1>Welcome</h1>
     <p>Please login below:</p>
-    <div flex>
+    <div flex>     
         <md-list >
           <md-list-item >        
             <md-input-container floatPlaceholder="auto|always|never">
-                <input mdInput name="email" placeholder="Email" [(ngModel))]="emailControl" required>
+                <input mdInput name="emailControl" placeholder="Email" [(ngModel)]="email" email required>
                 <span mdPrefix></span>
-                <md-error *ngIf="emailControl.hasError('required')">Email is required</md-error>
-                <md-error *ngIf="emailControl.hasError('pattern')">Please enter correct email</md-error>
+                <md-error>Email is required</md-error>                
                 <md-hint end></md-hint>
             </md-input-container>
           </md-list-item>
