@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from "@angular/router";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "@angular/material";
@@ -29,7 +30,13 @@ import { FlexDirective } from './shared/directives/flex.directive';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: HomeComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
