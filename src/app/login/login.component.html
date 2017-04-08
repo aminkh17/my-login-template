@@ -1,3 +1,28 @@
-<p>
-  login works!
-</p>
+
+<div class="login-card">
+    <h1>Welcome</h1>
+    <p>Please login below:</p>
+    <div flex>
+        <md-list >
+          <md-list-item >        
+            <md-input-container floatPlaceholder="auto|always|never">
+                <input mdInput name="email" [(ngModel)]="email" type="email" required
+                      placeholder="Email">
+                <span mdPrefix></span>
+            </md-input-container>
+          </md-list-item>
+          <md-list-item >
+            <md-input-container floatPlaceholder="auto|always|never">
+                <input mdInput name="password" [(ngModel)]="password" type="password" required
+                      placeholder="Password">
+                <span mdPrefix></span>
+            </md-input-container>
+          </md-list-item>
+      </md-list>
+    </div>
+    <div align="end">              
+        <button md-raised-button color="accent" (click)="login">Login</button>      
+    </div>
+ 
+</div>
+

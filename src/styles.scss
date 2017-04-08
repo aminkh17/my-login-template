@@ -1,7 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
 /*@import '~@angular/material/prebuilt-themes/indigo-pink.css';*/
-/*@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';*/
+  @import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 /*@import '~@angular/material/prebuilt-themes/purple-green.css';*/
 
 
@@ -10,3 +9,10 @@ body{
     font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     font-size: 14px;
 }
+//fix material prebuild 
+.mat-input-placeholder{color:rgba(0,0,0,.38);}
+.mat-input-underline{border-color:rgba(0,0,0,.12);}
+.mat-list .mat-list-item .mat-list-item-content, .mat-nav-list .mat-list-item .mat-list-item-content {    
+    height: 58px !important;
+}
+.mat-input-element{color:black !important;}

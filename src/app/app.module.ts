@@ -18,6 +18,7 @@ import { FlexDirective } from './shared/directives/flex.directive';
 
 import { AuthGuard } from "./shared/services/auth-guard.service";
 import { AuthService } from "./shared/services/auth-service.service";
+import { WallpaperDirective } from './shared/directives/wallpaper.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AuthService } from "./shared/services/auth-service.service";
     FooterComponent,
     ContentComponent,
     LoginComponent,
-    FlexDirective
+    FlexDirective,
+    WallpaperDirective
   ],
   imports: [
     BrowserModule,
