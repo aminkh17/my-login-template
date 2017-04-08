@@ -8,11 +8,21 @@ import { MaterialModule } from "@angular/material";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ContentComponent } from './shared/content/content.component';
+import { LoginComponent } from './login/login.component';
+import { FlexDirective } from './shared/directives/flex.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContentComponent,
+    LoginComponent,
+    FlexDirective
   ],
   imports: [
     BrowserModule,
